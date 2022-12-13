@@ -18,7 +18,7 @@ public class OrderItem {
     @JsonIgnore
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "order_id")
-    private Order orders;
+    private Order order;
 
     @JsonIgnore
     @ManyToOne(fetch = FetchType.LAZY)
